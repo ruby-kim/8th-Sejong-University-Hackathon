@@ -44,8 +44,8 @@
 ## Getting Started
 ```
 git clone https://github.com/kimkyeongnam/8th-Sejong-University-Hackathon.git
-cd 8th-Sejong-University-Hackathon
-(later..)
+cd 8th-Sejong-University-Hackathon/hackathon
+npm start   # yarn이 있을 시 yarn start로 대체 가능
 ```
 <br>
 
