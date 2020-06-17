@@ -9,6 +9,7 @@
 최근 COVID-19(코로나 바이러스)로 인한 온라인 원격 학습이 대폭 증가함에 따라, 이러한 점을 악용하여 공정해야 할 시험에서 부정행위가 발생해 사회적 논란이 일어나고 있다.<br>이에 따라 사무실 또는 집에서 설치하여 시험 문제 유출 및 부정행위 방지에 대처할 수 있는 인공지능 기반 온라인 시험 부정방지 플랫폼을 구축하고자 한다.
 ### 프로젝트 개발환경 및 언어
 * Ubuntu 18.04 LTS 또는 Windows10
+* node.js
 * React
 * (DB 종류)
 * (호스팅 할거면 어디로할지)
@@ -45,7 +46,8 @@
 ```
 git clone https://github.com/kimkyeongnam/8th-Sejong-University-Hackathon.git
 cd 8th-Sejong-University-Hackathon/hackathon
-npm start   # yarn이 있을 시 yarn start로 대체 가능
+npm install 또는 yarn install       # yarn은 설치 시 사용 가능
+npm start 또는 yarn start
 ```
 <br>
 
