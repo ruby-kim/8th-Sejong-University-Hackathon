@@ -44,9 +44,10 @@
 <br>
 
 ## Getting Started
+front-back 모두 실행했다는 조건하에, 예제 결과 화면은 ```./result```폴더의 가장 최신날짜 .gif파일 참고
 ```
 git clone https://github.com/kimkyeongnam/8th-Sejong-University-Hackathon.git
-cd 8th-Sejong-University-Hackathon/hackathon
+cd 8th-Sejong-University-Hackathon
 
 # front: localhost:3000으로 연결
 cd client && npm install 또는 yarn install       # yarn은 설치 시 사용 가능
