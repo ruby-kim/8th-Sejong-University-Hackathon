@@ -54,7 +54,7 @@ npm start 또는 yarn start
 
 # back: localhost:5000으로 연결
 cd server && npm install 또는 yarn install
-```.env```이라는 파일 설치 후 파일 안에 카톡에 보내준 내용 복붙
+.env    라는 파일 설치 후 파일 안에 카톡에 보내준 내용 복붙
 npm start 또는 yarn start
 ```
 <br>
