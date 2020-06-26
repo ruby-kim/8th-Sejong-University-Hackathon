@@ -14,7 +14,7 @@
   * Server: ExpressJS 
   * Front: ReactJS
   * Network: Node.js  [[win 설치]](https://nodejs.org/dist/v12.18.1/node-v12.18.1-x64.msi) [[linux 설치]](https://nodejs.org/dist/v12.18.1/node-v12.18.1-linux-x64.tar.xz)
-* React
+* (선택) Yarn
 * (Heroku로 배포 시도 예정)
 <br>
 
@@ -43,9 +43,6 @@
   * 가장 많이 틀린 문제, 각 문제 당 학생들의 답이 어떤 것을 선택했는 지 등 시험 문제 결과 정보도 제공할 수 있도록 구현
 <br>
 
-## DB
-<br>
-
 ## Getting Started
 ```
 git clone https://github.com/kimkyeongnam/8th-Sejong-University-Hackathon.git
@@ -57,6 +54,7 @@ npm start 또는 yarn start
 
 # back: localhost:5000으로 연결
 cd server && npm install 또는 yarn install
+```.env```이라는 파일 설치 후 파일 안에 카톡에 보내준 내용 복붙
 npm start 또는 yarn start
 ```
 <br>
