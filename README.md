@@ -51,6 +51,45 @@ npm start 또는 yarn start
 ```
 <br>
 
+## File Structure
+```
+.
+├─ README.md
+└─ hackathon
+   ├─ public
+   │  ├─ favicon.ico
+   │  ├─ index.html
+   │  ├─ logo192.png
+   │  ├─ logo512.png
+   │  ├─ manifest.json
+   │  └─ robots.txt
+   │  
+   ├─ src
+   │  ├─ assets
+   │  │  ├─ images
+   │  │  └─ fonts
+   │  │ 
+   │  ├─ components
+   │  │  ├─ Example.css
+   │  │  ├─ Example.js
+   │  │  ├─ Header.css
+   │  │  └─ Header.js
+   │  │
+   │  ├─ screens
+   │  │  ├─ Home.js
+   │  │  ├─ Professor.js
+   │  │  └─ Student.js
+   │  │
+   │  ├─ App.js
+   │  └─ index.js
+   │
+   ├─ .gitignore
+   ├─ package.json
+   ├─ package-lock.json
+   └─ README.md
+```
+<br>
+
 ## Developers
 |Name|Github|Email|
 |:--:|:--:|:--:|
