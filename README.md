@@ -9,10 +9,13 @@
 최근 COVID-19(코로나 바이러스)로 인한 온라인 원격 학습이 대폭 증가함에 따라, 이러한 점을 악용하여 공정해야 할 시험에서 부정행위가 발생해 사회적 논란이 일어나고 있다.<br>이에 따라 사무실 또는 집에서 설치하여 시험 문제 유출 및 부정행위 방지에 대처할 수 있는 인공지능 기반 온라인 시험 부정방지 플랫폼을 구축하고자 한다.
 ### 프로젝트 개발환경 및 언어
 * Ubuntu 18.04 LTS 또는 Windows10
-* node.js
+* MERN
+  * DB: MongoDB  [[win 설치]](https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.2.8-signed.msi)
+  * Server: ExpressJS 
+  * Front: ReactJS
+  * Network: Node.js  [[win 설치]](https://nodejs.org/dist/v12.18.1/node-v12.18.1-x64.msi) [[linux 설치]](https://nodejs.org/dist/v12.18.1/node-v12.18.1-linux-x64.tar.xz)
 * React
-* (DB 종류)
-* (호스팅 할거면 어디로할지)
+* (Heroku로 배포 시도 예정)
 <br>
 
 ## Main Functions
@@ -34,6 +37,7 @@
   * 학생들의 캠을 모두 한 곳에 보여줌
   * 학생들의 캠 밑에는 간단한 정보(학생의 단과대 및 학과, 학번, 이름, 전화번호 표기)
   * 시험 중 공지(ex. 시험 문제 정정)를 띄울 수 있도록 설정
+  * 아이트래커를 이용해서 특정시간 이상 금지구역에 눈이 머무를 시 관리자에게 알람이 가도록 설정
 * 시험 끝
   * 수강생들의 평균 성적 및 성적 내림차순 차트 등을 제공할 수 있도록 구현
   * 가장 많이 틀린 문제, 각 문제 당 학생들의 답이 어떤 것을 선택했는 지 등 시험 문제 결과 정보도 제공할 수 있도록 구현
@@ -46,13 +50,20 @@
 ```
 git clone https://github.com/kimkyeongnam/8th-Sejong-University-Hackathon.git
 cd 8th-Sejong-University-Hackathon/hackathon
-npm install 또는 yarn install       # yarn은 설치 시 사용 가능
+
+# front: localhost:3000으로 연결
+cd client && npm install 또는 yarn install       # yarn은 설치 시 사용 가능
+npm start 또는 yarn start
+
+# back: localhost:5000으로 연결
+cd server && npm install 또는 yarn install
 npm start 또는 yarn start
 ```
 <br>
 
 ## File Structure
 ```
+(구현완료 시 수정예정)
 .
 ├─ README.md
 └─ hackathon
