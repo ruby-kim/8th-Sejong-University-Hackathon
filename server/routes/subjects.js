@@ -2,7 +2,7 @@ const router = require('express').Router();
 let Subject = require('../models/subject.model');
 
 router.route('/').get((req, res) => {
-    User.find()
+    Subject.find()
         .then(subjects => res.json(subjects))
         .catch(err => res.status(400).json('Error: ' + err));
 });
@@ -37,7 +37,7 @@ router.route('/update/:id').post((req, res) => {
         subject.name = req.body.name;
         subject.testtime = req.body.testtime;
   
-        course.save()
+        subject.save()
           .then(() => res.json('Subject updated!'))
           .catch(err => res.status(400).json('Error: ' + err));
       })

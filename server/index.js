@@ -27,11 +27,15 @@ const coursesRouter = require('./routes/courses');
 const usersRouter = require('./routes/users');
 const studentsRouter = require('./routes/students');
 const subjectsRouter = require('./routes/subjects');
+const examRouter = require('./routes/exams');
+const answersheetRouter = require('./routes/answersheets');
 
 app.use('/courses', coursesRouter);
 app.use('/users', usersRouter);
 app.use('/students', studentsRouter);
-app.use('/subjects', subjectsRouter)
+app.use('/subjects', subjectsRouter);
+app.use('/exams', examRouter);
+app.use('/answersheets', answersheetRouter);
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('../build'));
