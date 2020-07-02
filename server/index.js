@@ -25,9 +25,11 @@ app.use(express.json());
 // HTTP request logger
 const coursesRouter = require('./routes/courses');
 const usersRouter = require('./routes/users');
+const studentsRouter = require('./routes/students');
 
 app.use('/courses', coursesRouter);
 app.use('/users', usersRouter);
+app.use('/students', studentsRouter);
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('../build'));
