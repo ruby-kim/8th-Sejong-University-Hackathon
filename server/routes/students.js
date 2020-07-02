@@ -13,6 +13,8 @@ router.route('/add').post((req, res) => {
     const phonenum = req.body.phonenum;
     const status = req.body.status;
     const password = req.body.password;
+    const subjects = req.body.subjects;
+    const scores = req.body.scores;
 
     const newStudent = new Student({
         studentnum,
@@ -20,6 +22,8 @@ router.route('/add').post((req, res) => {
         phonenum,
         status,
         password,
+        subjects,
+        scores,
     });
 
     newStudent.save()
@@ -36,6 +40,8 @@ router.route('/update/:id').post((req, res) => {
         student.phonenum = req.body.phonenum;
         student.status = req.body.status;
         student.password = req.body.password;
+        student.subjects = req.body.subjects;
+        student.scores = req.body.scores;
   
         course.save()
           .then(() => res.json('Student updated!'))

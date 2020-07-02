@@ -13,7 +13,9 @@ const studentSchema = new Schema({
     name: {type: String, required: true},
     phonenum: {type: String, required: true},
     status: {type: String, required: true},
-    password: {type: String, required: true}
+    password: {type: String, required: true},
+    subjects: [{type: String, ref: 'Subject'}],
+    scores: [{type: String, ref: 'Subject'}],
 }, {
     timestamps: true,
 });
