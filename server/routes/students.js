@@ -43,7 +43,7 @@ router.route('/update/:id').post((req, res) => {
         student.courses = req.body.courses;
         student.scores = req.body.scores;
 
-        course.save()
+        student.save()
           .then(() => res.json('Student updated!'))
           .catch(err => res.status(400).json('Error: ' + err));
       })
