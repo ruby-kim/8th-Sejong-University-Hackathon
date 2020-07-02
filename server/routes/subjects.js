@@ -1,5 +1,5 @@
 const router = require('express').Router();
-let Student = require('../models/subject.model');
+let Subject = require('../models/subject.model');
 
 router.route('/').get((req, res) => {
     User.find()
@@ -8,18 +8,18 @@ router.route('/').get((req, res) => {
 });
 
 router.route('/add').post((req, res) => {
+    const subjectprimary = req.body.subjectprimary;
     const subjectnum = req.body.subjectnum;
     const classnum = req.body.classnum;
     const name = req.body.name;
     const testtime = req.body.testtime;
-    const testpapernum = req.body.testpapernum;
 
     const newSubject = new Subject({
+        subjectprimary,
         subjectnum,
         classnum,
         name,
         testtime,
-        testpapernum,
     });
 
     newSubject.save()
@@ -31,11 +31,11 @@ router.route('/add').post((req, res) => {
 router.route('/update/:id').post((req, res) => {
     Subject.findById(req.params.id)
       .then(subject => {
+        subject.subjectprimary = req.body.subjectprimary;
         subject.subjectnum = req.body.subjectnum;
         subject.classnum = req.body.classnum;
         subject.name = req.body.name;
         subject.testtime = req.body.testtime;
-        subject.testpapernum = req.body.testpapernum;
   
         course.save()
           .then(() => res.json('Subject updated!'))

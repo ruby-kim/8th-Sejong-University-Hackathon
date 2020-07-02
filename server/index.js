@@ -26,10 +26,12 @@ app.use(express.json());
 const coursesRouter = require('./routes/courses');
 const usersRouter = require('./routes/users');
 const studentsRouter = require('./routes/students');
+const subjectsRouter = require('./routes/subjects');
 
 app.use('/courses', coursesRouter);
 app.use('/users', usersRouter);
 app.use('/students', studentsRouter);
+app.use('/subjects', subjectsRouter)
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('../build'));
