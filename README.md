@@ -4,7 +4,7 @@
 
 ## Introduction
 ### 주제: 인공지능 기반 스마트 보안 시스템<br>
-사무실 또는 집에 설치하여 보안 사고를 예방하고 사고 발생 때 대처할 수 있는 인공지능 기반 시스템 플랫폼 개발<br>
+사무실 또는 집에 설치하여 보안 사고를 예방하고 사고 발생 때 대처할 수 있는 인공지능 기반 시스템 개발<br>
 ### 세부주제: 온라인 시험 부정방지 플랫폼 개발
 최근 COVID-19(코로나 바이러스)로 인한 온라인 원격 학습이 대폭 증가함에 따라, 이러한 점을 악용하여 공정해야 할 시험에서 부정행위가 발생해 사회적 논란이 일어나고 있다.<br>이에 따라 사무실 또는 집에서 설치하여 시험 문제 유출 및 부정행위 방지에 대처할 수 있는 인공지능 기반 온라인 시험 부정방지 플랫폼을 구축하고자 한다.
 ### 프로젝트 개발환경 및 언어
@@ -16,6 +16,8 @@
   * Network: Node.js  [[win 설치]](https://nodejs.org/dist/v12.18.1/node-v12.18.1-x64.msi) [[linux 설치]](https://nodejs.org/dist/v12.18.1/node-v12.18.1-linux-x64.tar.xz)
 * (선택) Yarn
 * (Heroku로 배포 시도 예정)
+### 프레젠테이션
+[google presentation 참고](https://docs.google.com/presentation/d/1lMmQ6tUOSC-YCCTcBqePIKIEetGPeEIsL45zdqDnq9Y/edit?usp=sharing)
 <br>
 
 ## Main Functions
